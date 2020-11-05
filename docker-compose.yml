@@ -18,6 +18,7 @@ services:
       - "3003:3000"
     depends_on:
       - db
+    restart: always
 
   db:
     image: mysql:5.7
@@ -28,6 +29,6 @@ services:
       MYSQL_USER: test
       MYSQL_PASSWORD: test1234
     ports:
-      - "3307:3306"
+      - "3306:3306"
     volumes:
       - ./docker/data/db:/var/lib/mysql

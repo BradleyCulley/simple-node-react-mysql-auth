@@ -1,3 +1,4 @@
 FROM node:9
 WORKDIR /app
-CMD ls -ltr && npm install && npm start
+RUN npm i bcrypt
+CMD ls -ltr && npm install && npm install bcrypt && npm start

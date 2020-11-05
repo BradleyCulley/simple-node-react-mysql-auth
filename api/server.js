@@ -9,7 +9,7 @@ import helmet from 'helmet';
 
 const app = express();
 
-const API_PORT = process.env.API_PORT || 3000;
+const API_PORT = process.env.API_PORT || 3003;
 
 const swaggerDefinition = {
   info: {
